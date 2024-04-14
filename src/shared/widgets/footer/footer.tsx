@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="w-full bg-black text-white pt-10">
       <div className="w-[95%] md:flex m-auto py-5">
         <div className="w-full md:w-[40%]">
-          <Link href={"/"}>
+          <Link href={"/sign-up"}>
             <FooterLogo />
           </Link>
           <p className="text-2xl py-2">

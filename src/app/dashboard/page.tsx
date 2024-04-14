@@ -30,9 +30,12 @@ const Main = () => {
 
   return (
     <div className="p-5 w-full h-screen bg-[#f9fafb]">
+      <div className="flex items-center">
       <h1 className="text-2xl text-surface-900 font-medium">
-        Hi {user?.fullName} <ShakeEmoji/>
+        Hi {user?.fullName}
       </h1>
+      <ShakeEmoji />
+    </div>
       <p className="opacity-[.7] text-sm pt-2">
         Here&apos;s how your publication is doing
       </p>
