@@ -10,7 +10,8 @@ const Logo = () => {
       x="0px"
       y="0px"
       viewBox="0 0 439.4 110.2"
-      className="fill-black cursor-pointer h-[28px] lg:h-[32px]"
+      className=" cursor-pointer h-[28px] lg:h-[32px]"
+  style={{ fill: '#22d3ee' }}
     >
       <g id="b">
         <g id="c">
