@@ -1,10 +1,12 @@
 "use client";
 import { NextUIProvider } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
-{/**import { useUser } from "@clerk/nextjs";
-import DashboardSidebar from "@/shared/widgets/dashboard/sidebar/dashboard.sidebar";
+import { useUser } from "@clerk/nextjs";
 import { Toaster } from "react-hot-toast";
-import { addStripe } from "@/actions/add.stripe";**/}
+
+import DashboardSidebar from "@/shared/widgets/dashboard/sidebar/dashboard.sidebar";
+
+{/**import { addStripe } from "@/actions/add.stripe";**/}
 
 interface ProviderProps {
   children: React.ReactNode;
@@ -13,9 +15,9 @@ interface ProviderProps {
 export default function Providers({ children }: ProviderProps) {
   const pathname = usePathname();
 
-  {/**const { isLoaded, user } = useUser();
+  const { isLoaded, user } = useUser();
 
-  const isStripeCustomerIdHas = async () => {
+  {/*const isStripeCustomerIdHas = async () => {
     await addStripe();
   };
 
@@ -37,14 +39,14 @@ export default function Providers({ children }: ProviderProps) {
       pathname !== "/sign-in" ? (
         <div className="w-full flex">
           <div className="w-[290px] h-screen overflow-y-scroll">
-          { /** <DashboardSidebar />*/ }
+           <DashboardSidebar />
           </div>
           {children}
         </div>
       ) : (
         <>{children}</>
       )}
-     {/**  <Toaster position="top-center" reverseOrder={false} />*/}
+      <Toaster position="top-center" reverseOrder={false} />
     </NextUIProvider>
   );
 }
