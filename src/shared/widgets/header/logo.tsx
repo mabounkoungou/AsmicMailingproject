@@ -3,16 +3,16 @@ import React from 'react'
 const Logo = () => {
   return (
     <div className="relative flex items-center">
-    <svg
-      version="1.1"
-      id="a"
-      xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      viewBox="0 0 439.4 110.2"
-      className=" cursor-pointer h-[28px] lg:h-[32px]"
+   <svg
+  version="1.1"
+  id="a"
+  xmlns="http://www.w3.org/2000/svg"
+  x="0px"
+  y="0px"
+  viewBox="0 0 439.4 110.2"
+  className="cursor-pointer h-[28px] lg:h-[32px]"
   style={{ fill: '#22d3ee' }}
-    >
+>
       <g id="b">
         <g id="c">
           <g>

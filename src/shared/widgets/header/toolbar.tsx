@@ -21,7 +21,7 @@ const Toolbar = () => {
             />
           </Link>
        
-      ) : (
+    
         <Link href={"/sign-in"}><Button className="btn btn-primary">Signin</Button></Link>
      
     </>
