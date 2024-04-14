@@ -4,6 +4,7 @@ import Banner from './features/banner'
 import Branding from './features/branding'
 import FeatureHighlight from './features/feature.highlight'
 import Pricing from './features/pricing'
+import Footer from '@/shared/widgets/footer'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Branding/>
         <FeatureHighlight/>
         <Pricing/>
+        <Footer/>
     </div>
   )
 }

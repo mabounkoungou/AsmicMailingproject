@@ -54,6 +54,9 @@ export const GrowPlan: PlanType[] = [
   {
     title: "Up to 10,000 subscribers",
   },
+  {
+    title: "Newsletter analytics",
+  },
   
   {
     title: "API access",
@@ -70,9 +73,7 @@ export const scalePlan: PlanType[] = [
   {
     title: "Referal program",
   },
-  {
-    title: "AI support",
-  },
+  
   {
     title: "Advanced support system",
   },

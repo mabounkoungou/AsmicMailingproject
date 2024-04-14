@@ -1,10 +1,13 @@
-import { Button } from "@nextui-org/react";
+import { ICONS } from "@/shared/utils/icons";
+import { Button } from "@nextui-org/button";
+import { GrowPlan, freePlan, scalePlan } from "@/app/configs/constants";
+
+
 
 {/*import { stripeSubscribe } from "@/actions/stripe.subscribe";
 import { GrowPlan, freePlan, scalePlan } from "@/app/configs/constants";
 import { ICONS } from "@/shared/utils/icons";
 import { useUser } from "@clerk/nextjs";
-import { Button } from "@nextui-org/button";
 import { useRouter } from "next/navigation";
 
 const PricingCard = ({ active }: { active: string }) => {
@@ -49,20 +52,20 @@ const PricingCard = ({ active }: { active: string }) => {
          border-[#000]
          style={{ borderRadius: rounded }}
          ">
-          <h5 className="font-clashDisplay uppercase text-cyber-ink text-3xl text-center">
+          <h5 className="font-clashDisplay uppercase text-cyber-ink text-3xl ">
             $0
           </h5>
-          <p className="text-lg text-center">Free</p>
+          <p className="text-lg ">Free</p>
         </div>
         <div className="pt-5">
-          <p className="text-xl text-center">What&apos;s included...</p>
+          <p className="text-xl ">What&apos;s included...</p>
         </div>
-   {  /**  {freePlan.map((i: PlanType, index: number) => (
-          <div key={index} className="flex w-full items-center py-4">
+    {freePlan.map((i: PlanType, index: number) => (
+          <div key={index} className="flex w-full items-center py-4 text">
             <span className="text-xl">{ICONS.right}</span>
             <p className="pl-2 text-lg">{i.title}</p>
           </div>
-        ))} */ }
+        ))} 
         <br />
         <Button color="primary" className="w-full text-xl !py-6">
           Get Started
@@ -101,12 +104,12 @@ const PricingCard = ({ active }: { active: string }) => {
         <div className="pt-5">
           <p className="text-xl">Everything in Launch, plus...</p>
         </div>
-     { /**   {GrowPlan.map((i: PlanType, index: number) => (
+      {GrowPlan.map((i: PlanType, index: number) => (
           <div key={index} className="flex w-full items-center py-4">
             <span className="text-xl">{ICONS.right}</span>
             <p className="pl-2 text-lg">{i.title}</p>
           </div>
-        ))}*/}
+        ))}
         <br />
         <Button
           color="primary"
@@ -157,12 +160,12 @@ const PricingCard = ({ active }: { active: string }) => {
         <div className="pt-5">
           <p className="text-xl">Everything in Grow, plus...</p>
         </div>
-     {/**   {scalePlan.map((i: PlanType, index: number) => (
+        {scalePlan.map((i: PlanType, index: number) => (
           <div key={index} className="flex w-full items-center py-4">
             <span className="text-xl">{ICONS.right}</span>
             <p className="pl-2 text-lg">{i.title}</p>
           </div>
-        ))}*/}
+        ))}
         <br />
         <Button
           color="primary"
