@@ -8,6 +8,7 @@ import { ICONS } from "@/shared/utils/icons";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import Link from "next/link";
+import ShakeEmoji from "@/shared/shake/shake";
 
 const Main = () => {
   const { user } = useUser();
@@ -30,7 +31,7 @@ const Main = () => {
   return (
     <div className="p-5 w-full h-screen bg-[#f9fafb]">
       <h1 className="text-2xl text-surface-900 font-medium">
-        Hi {user?.fullName} 👋
+        Hi {user?.fullName} <ShakeEmoji/>
       </h1>
       <p className="opacity-[.7] text-sm pt-2">
         Here&apos;s how your publication is doing
